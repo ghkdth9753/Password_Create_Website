@@ -10,6 +10,7 @@
     <h1>PCW</h1>
     <h3>비밀번호 생성기 및 강력한 보안통합관리 시스템</h3>
     <form action="#" method="post">
+        <p>
         <select id="pass_method">
             <option name="domain" value="domain">도메인</option>
             <option name="google" value="google">구글</option>
@@ -19,13 +20,18 @@
             <option name="facebook" value="facebook">페이스북</option>
             <option name="instagram" value="instagram">인스타그램</option>
         </select>
+        </p>
+        <p>
         <div>
         <input type='checkbox' id='upper'><label for="upper">대문자</label>
         <input type='checkbox' id='upper'><label for="upper">기호</label>
         </div>
+        </p>
+        <p>
         <div class="Container"> <font size = 2 id = "slider_value_view">길이</font>
         <input class="slider_range" type="range" value="0" min="0" max="16"></input></div>
-        <input id="copy_admin_pw" type="button" value="보안비밀번호 복사">
+        </p>
+        <p><input id="copy_admin_pw" type="button" value="보안비밀번호 복사"></p>
     </form>
     
 </body>

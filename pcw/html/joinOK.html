@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		<script type="text/javascript">
+			alert('아이디가 이미 존재합니다.');
+			history.back();
+		</script>
+	<%}else{
+		int result = dao.insertMember(dto);
+		if(result == 1){
+			session.setAttribute("id", dto.getId());
+	%>	
+		<script type="text/javascript">
+			alert('회원가입을 축하합니다.');
+			document.location.href = "login.jsp";
+		</script>
+		
+	<%
+			
+		}else {
+	%>
+		<script>
+			alert('회원가입에 실패했습니다.');
+			document.location.href = "join.jsp";
+		</script>
+	
+	<%
+		}
+	}
+		
+	%>
+	
+</body>
+</html>
