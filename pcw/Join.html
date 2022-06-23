@@ -8,9 +8,9 @@
 <body>
     <form action="#" method="post">
         <fieldset>
-            <legend>회원가입</legend>
+            <legend></legend>
             <p>
-                <label for="name">name</label>
+                <label for="name">username</label>
                 <input type="text" name="my_name" id="name" size="20" required>
             </p>
 
@@ -20,28 +20,39 @@
             </p>
 
             <p>
-                <label for="pw">Password</label>
+                <label for="pw">Pass word</label>
                 <input type="password" id="pw" name="my_password" minlength="4" maxlength="12" size="15" pattern="[a-zA-Z0-9]{4,12}" title="4~12자의 영문 대소문자와 숫자로만 입력."required/>
             </p>
 
             <p>
-                <label for="birth">birth</label>
-                <input type="text" name="birth" id="birth" size="10" maxlength="10" placeholder="2020/12/20" required>
-            </p>
-
-            <p>
-                <label>E-mail</label>
-                <input type="email" name="email" id="email" size="20" placeholder="abc123@naver.com" required>
+                <label for="pw">Admin password</label>
+                <input type="password" id="admin_pw" name="admin_password" size="16" required/>
             </p>
 
             <p>
                 <label>
                     <input type='checkbox'
-                           id='my_checkbox'
-                           onclick='is_checked()'
-                    > 개인정보 동의
+                           id='my_checkbox_1'
+                           onclick='is_checked_1()'
+                    > 개인정보수집/이용동의
                 </label>
-                <pre id='result'>
+                <pre id='result_1'>
+                </pre>
+            </p>
+
+            <p>
+                <a href=""><button type="button">전문보기</button></a>
+            </p>
+
+
+            <p>
+                <label>
+                    <input type='checkbox'
+                           id='my_checkbox_2'
+                           onclick='is_checked_2()'
+                    > 개인정보제3자제공동의
+                </label>
+                <pre id='result_2'>
                 </pre>
             </p>
         </fieldset>
