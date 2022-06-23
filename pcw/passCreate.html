@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <meta charset="UTF-8">
     <script src="js/passCreate.js"></script>
     <title>비밀번호 생성 페이지</title>
@@ -10,13 +11,14 @@
     <h3>비밀번호 생성기 및 강력한 보안통합관리 시스템</h3>
     <form action="#" method="post">
         <select id="pass_method">
-            <option value="">PIN</option>
-            <option value="1">#</option>
-            <option value="2">#</option>
-            <option value="3">#</option>
+            <option value="">도메인</option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
         </select>
-        <label for="my_domain">도메인</label>
-        <input type="text" placeholder="ex) www.naver.com" name="my_domain" id="domain">
+        <input type='checkbox' id='upper'><label for="upper">대문자</label>
+        <input type='checkbox' id='upper'><label for="upper">기호</label>
+
     </form>
     
 </body>
