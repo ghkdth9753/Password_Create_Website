@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Join</title>
+    <script src="js/joincheck.js"></script> 
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>회원가입</legend>
+            <p>
+                <label for="name">name</label>
+                <input type="text" name="my_name" id="name" size="20" required>
+            </p>
+
+            <p>
+                <label for="id">ID</label>
+                <input type="text" name="my_id" id="id" minlength="4" maxlength="12" size="15" pattern="[a-zA-Z0-9]{4,12}" title="4~12자의 영문 대소문자와 숫자로만 입력." required/>
+            </p>
+
+            <p>
+                <label for="pw">Password</label>
+                <input type="password" id="pw" name="my_password" minlength="4" maxlength="12" size="15" pattern="[a-zA-Z0-9]{4,12}" title="4~12자의 영문 대소문자와 숫자로만 입력."required/>
+            </p>
+
+            <p>
+                <label for="pw_cf">Password Confirm</label>
+                <input type="password" id="pw_cf" name="my_password_confirm" onkeyup="check_pw()" value="" maxlength="12" size="15" required> 
+            <span id="pw_check_msg"></span> 
+            </p>
+
+            <p>
+                <label for="birth">birth</label>
+                <input type="text" name="birth" id="birth" size="8" maxlength="8">
+            </p>
+
+            <p>
+                <label>?</label>
+                <input type="text" id="" readonly>
+            </p>
+        </fieldset>
+            <p>
+                <input type="submit" value="회원가입">
+                <input type="reset"  value="다시 입력">
+            </p>
+    </form>
+</body>
+</html>
