@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <meta charset="UTF-8">
-    <script src="js/passCreate.js"></script>
+    <script src="../pcw/js/passCreate.js"></script>
     <title>비밀번호 생성 페이지</title>
 </head>
 <body>
@@ -11,14 +11,21 @@
     <h3>비밀번호 생성기 및 강력한 보안통합관리 시스템</h3>
     <form action="#" method="post">
         <select id="pass_method">
-            <option value="">도메인</option>
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
+            <option name="domain" value="domain">도메인</option>
+            <option name="google" value="google">구글</option>
+            <option name="naver" value="naver">네이버</option>
+            <option name="daum" value="daum">다음</option>
+            <option name="youtube" value="youtube">유튜브</option>
+            <option name="facebook" value="facebook">페이스북</option>
+            <option name="instagram" value="instagram">인스타그램</option>
         </select>
+        <div>
         <input type='checkbox' id='upper'><label for="upper">대문자</label>
         <input type='checkbox' id='upper'><label for="upper">기호</label>
-
+        </div>
+        <div class="Container"> <font size = 2 id = "slider_value_view">길이</font>
+        <input class="slider_range" type="range" value="0" min="0" max="16"></input></div>
+        <input id="copy_admin_pw" type="button" value="보안비밀번호 복사">
     </form>
     
 </body>

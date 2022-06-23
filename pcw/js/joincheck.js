@@ -1,6 +1,4 @@
 function checked(){  //form 유효성 검사 
-    var p = document.getElementById('pw'); 
-    var p_cf = document.getElementById('admin_pw');
     var nameCheck = document.getElementById("name");
     var named= RegExp(/^[가-힣]+$/)
 
