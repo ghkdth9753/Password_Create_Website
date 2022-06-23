@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Join</title>
+    <title>PCW</title>
     <script src="js/joincheck.js"></script> 
 </head>
 <body>
@@ -25,19 +25,13 @@
             </p>
 
             <p>
-                <label for="pw_cf">Password Confirm</label>
-                <input type="password" id="pw_cf" name="my_password_confirm" onkeyup="check_pw()" value="" maxlength="12" size="15" required> 
-            <span id="pw_check_msg"></span> 
-            </p>
-
-            <p>
                 <label for="birth">birth</label>
-                <input type="text" name="birth" id="birth" size="8" maxlength="8">
+                <input type="text" name="birth" id="birth" size="10" maxlength="10" placeholder="2020/12/20" required>
             </p>
 
             <p>
-                <label>?</label>
-                <input type="text" id="" readonly>
+                <label>E-mail</label>
+                <input type="email" name="email" id="email" size="20" placeholder="abc123@naver.com" required>
             </p>
         </fieldset>
             <p>

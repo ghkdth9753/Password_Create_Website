@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Login_Page</title>
+    <title>Sign in</title>
     <script src="js/loginForm.js"></script>
 </head>
 <body>
@@ -10,15 +10,19 @@
         <h1>로그인 페이지</h1>
         <form action="#">
             <div class="int-area">
-                <input type="text" name="id" id="id" placeholder="ID" autocomplete="off" required>
+                <input type="text" name="my_id" id="id" placeholder="ID" autocomplete="off" required>
                 <label for="id">USER NAME</label>
             </div>
             <div class="int-area">
-                <input type="password" name="pw" id="pw" placeholder="Password" autocomplete="off" required>
+                <input type="password" name="my_password" id="pw" placeholder="Password" autocomplete="off" required>
                 <label for="pw">PASSWORD</label>
             </div>
             <div class="btn-area">
                 <button type="submit">LOGIN</button>
+            </div>
+            <div class="chk-area">
+                <input type="checkbox" id="at_sign" name="at_sign">
+                <label for="at_sign">auto signin</label>
             </div>
         </form>
         <div class="caption">
